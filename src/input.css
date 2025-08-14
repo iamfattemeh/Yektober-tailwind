@@ -1,1 +1,21 @@
 @import "tailwindcss";
+*{
+    direction: rtl;
+}
+
+@theme {
+    --color-primary: #2A2A2A;
+    --color-secondary: #000000;
+    --color-thirdary: ;
+    --font-primary: "IRANYEKAN" , serif ;
+    --font-secondary: ;
+}
+@layer base{
+    body{
+        color: var(--color-primary);
+        color: var(--color-secondary);
+        color: var();
+        font-family: var(--font-primary);
+        font-family: var(--font-secondary);
+    }
+}
