@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="fonts/fonts.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-
 
 <body>
   <header class="w-full h-15 flex items-center">
@@ -226,63 +225,173 @@
 
     </div>
   </section>
-  <section class="w-full max-w-6xl mx-auto p-4" dir="rtl">
-    <div class="flex flex-col md:flex-row xl:ju"> <!-- ستون راست: باکس خاکستری -->
+
+  <section class="w-full  max-w-6xl mx-auto p-4 " dir="rtl">
+    <div class="flex flex-col md:flex-row xl:ju">
+      <!-- ستون راست: باکس خاکستری -->
       <div class="md:w-[23.563rem] md:h-[34rem]">
         <div class="bg-[#F2F2F2] rounded-3xl p-6 flex flex-col h-full"> <!-- متن بالا -->
           <h2 class="text-primary font-primary text-[1.75rem] mb-2"> <span class="text-secondary font-bold">پولت </span>
-            <span class="text-primary">رو دور</span> <span class="text-thirdary font-bold"> نریز!</span>
+            <span class="text-primary">رو دور</span> <span class="text-[#E33232] font-bold"> نریز!</span>
           </h2>
           <p class="text-primary font-primary text-[0.875rem] mb-6"> تولید محتوا در یوتیوب یک فعالیت هیجان‌انگیز است که
             در کنار جذابیت‌هایش، مشکلات و فوت‌و‌فن‌های خودش را هم دارد. </p> <!-- عکس پایین --> <img
-            src="image/child-sitting-chair-with-laptop_1106493-109031 Background Removed 1.svg" alt="تصویر" class="">
-        </div>
-      </div> <!-- ستون چپ: تعرفه + کارت‌ها -->
-      <div class="w-full h-135 md:w-2/3 md:mr-18"> <!-- تعرفه‌ها -->
-        <div class="p-4 md:mt-5">
-          <div class="flex items-center justify-between mb-4">
-            <div class="text-[1.25rem] font-bold text-primary font-primary"> <span
-                class="text-secondary">تعرفه</span>‌های این افزونه: </div>
-            <div class="flex bg-gray-200 rounded-full p-1 w-[7.313rem] h-[2rem] font-primary"> <button
-                class="bg-thirdary text-white text-[0.75rem] px-3 py-1 rounded-full"> ماهانه </button> <button
-                class="text-[#2B2B2B] text-[0.75rem] px-3 py-1 rounded-full"> سالانه </button> </div>
-          </div>
-          <p class="text-[#2B2B2B] text-[0.875rem] leading-6 mb-6"> از میان تعرفه‌های موجود، بهترین و مناسب‌ترین را
-            انتخاب کنید! </p>
-        </div> <!-- کارت‌ها -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-8"> <!-- کارت پلن لجند -->
-          <div
-            class="border-[#FEEBEB] border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
-            <img src="image/image 2.svg" alt="">
-            <div class="text-primary font-primary flex justify-center gap-1 mb-2">پلن<span
-                class="font-bold text-secondary">لجند</span></div>
-            <p class="text-[#2B2B2B] font-primary text-[0.75rem] mb-4"> مناسب برای کسانی که به تازگی در فضای یوتیوب شروع
-              به فعالیت کرده‌اند و به ابزارهای جدید برای رشد کانال نیاز دارند. </p>
-            <div class="text-secondary flex items-center justify-center font-primary text-[1.625rem] mb-4">
-              <p class="text-[0.75rem] text-primary">ماهانه/</p>56.87 <span class="text-thirdary">$</span>
-            </div> <button class="w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-thirdary">مشاهده تعرفه پلن</button>
-          </div> <!-- کارت پلن پرو -->
-          <div
-            class="border-[#FEEBEB] border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
-            <img src="image/image 2.svg" alt="">
-            <div class="text-primary font-primary flex justify-center gap-1 mb-2">پلن<span
-                class="font-bold text-secondary">پرو</span></div>
-            <p class="text-[#2B2B2B] font-primary text-[0.75rem] mb-4"> مناسب برای کسانی که به تازگی در فضای یوتیوب شروع
-              به فعالیت کرده‌اند و به ابزارهای جدید برای رشد کانال نیاز دارند. </p>
-            <div class="text-secondary flex items-center justify-center font-primary text-[1.625rem] mb-4">
-              <p class="text-[0.75rem] text-primary">ماهانه/</p>56.87 <span class="text-thirdary">$</span>
-            </div> <button class="w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-thirdary">مشاهده تعرفه پلن</button>
-          </div>
+            src="images/child-sitting-chair-with-laptop_1106493-109031 Background Removed 1.svg" alt="تصویر" class="">
         </div>
       </div>
+
+      <!-- ستون چپ: تعرفه + کارت‌ها -->
+      <div class="w-full md:w-2/3 md:mr-18">
+
+        <!-- تعرفه‌ها -->
+        <div class="p-4 md:mt-5">
+          <div class="flex items-center justify-between mb-4">
+            <div class="font-light text-xl text-primary font-primary">
+              <span class="text-secondary text-2xl font-bold">تعرفه</span>‌ های این افزونه:
+            </div>
+            <div class="flex bg-gray-200 rounded-full p-1 w-[7.313rem] h-[2rem] font-primary">
+              <button class="bg-[#E33232] text-white text-[0.75rem] px-3 py-1 rounded-full">ماهانه</button>
+              <button class="text-[#2B2B2B] text-[0.75rem] px-3 py-1 rounded-full">سالانه</button>
+            </div>
+          </div>
+          <p class="text-[#2B2B2B] text-[0.875rem] leading-6 mb-6">
+            از میان تعرفه‌های موجود، بهترین و مناسب‌ترین را انتخاب کنید!
+          </p>
+        </div>
+
+        <!-- کارت‌ها -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:mt-8 items-start">
+
+          <!-- کارت پلن لجند -->
+          <div
+            class="border-[#FEEBEB] border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            <img src="images/image 2.svg" alt="">
+            <div class="text-primary font-primary text-3xl flex justify-start gap-1 mb-2 mt-3">
+              پلن<span class="font-bold text-3xl text-secondary">لجند</span>
+            </div>
+            <p class="text-[#2B2B2B] font-primary text-[0.75rem] mb-4 mt-3">
+              مناسب برای کسانی که به تازگی در فضای یوتیوب شروع به فعالیت کرده‌اند و به ابزارهای جدید برای رشد کانال نیاز
+              دارند.
+            </p>
+            <div class="text-secondary flex items-center justify-end font-primary text-[1.625rem] mb-4">
+              <p class="text-[0.75rem] font-primary text-primary">ماهانه/</p>
+              56.87 <span class="text-[#E33232]">$</span>
+            </div>
+            <button class="w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-[#E33232] font-primary">
+              مشاهده تعرفه پلن
+            </button>
+          </div>
+
+          <!-- کارت پلن پرو -->
+          <div
+            class="border-[#FEEBEB] border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            <img src="images/image 2.svg" alt="">
+            <div class="text-primary text-3xl font-primary flex justify-start gap-1 mb-2 mt-3">
+              پلن<span class="font-bold text-3xl text-secondary">پرو</span>
+            </div>
+            <p class="text-[#2B2B2B] font-primary text-[0.75rem] mb-4 mt-3">
+              مناسب برای کسانی که به تازگی در فضای یوتیوب شروع به فعالیت کرده‌اند و به ابزارهای جدید برای رشد کانال نیاز
+              دارند.
+            </p>
+            <div class="text-secondary flex items-center justify-end font-primary text-[1.625rem] mb-4">
+              <p class="text-[0.75rem] text-primary">ماهانه/</p>
+              56.87 <span class="text-[#E33232]">$</span>
+            </div>
+            <button class="w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-[#E33232] font-primary">
+              مشاهده تعرفه پلن
+            </button>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
-  </body>
+  <section>
+    <div class="w-full h-130 min-h-[150px] flex flex-col justify-center items-center md:h-180">
+      <div class="w-full max-w-[30rem] h-auto flex flex-col justify-center items-center p-4">
+
+        <!-- باکس پیام -->
+        <div class="w-full max-w-[200px] h-9 bg-[#F5F5F7] rounded-[10px] flex items-center justify-center gap-2">
+          <img src="images/message-2.svg" alt="" class="w-4 h-4">
+          <span class="text-[12px] font-light font-primary text-[#2B2B2B] text-center">
+            بشنوید از همرهان یک تیوبر
+          </span>
+        </div>
+
+        <!-- متن + لوگو -->
+        <div class="w-full flex justify-center items-center gap-2 mt-2 text-center flex-wrap md:mt-6">
+          <p class="font-light text-lg text-[#2B2B2B] font-primary flex items-center gap-2 flex-wrap">
+            تجربه همکاری با ما را از زبان همراهان
+            <img src="images/Logo.png" alt="" class="inline-block">
+            بشنوید
+          </p>
+        </div>
+
+      </div>
+
+      <!-- حالت دسکتاپ و لپ‌تاپ -->
+      <div class="hidden md:inline-block mt-7 relative">
+        <!-- تصویر اصلی -->
+        <img src="images/Vector-rec.svg" alt="rec" class="relative z-10 w-full h-auto">
+        <!-- تصویر border -->
+        <img src="images/Vector-border.svg" alt="border" class="absolute inset-0 z-20 w-full h-auto">
+        <!-- متن و محتوا -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center z-30 p-6">
+          <div class="max-w-xs text-center">
+            <img src="images/profile.svg" alt="" class="mx-auto mb-3">
+            <span class="text-xl text-[#2B2B2B] font-semibold font-primary">سکینه محمدی</span>
+            <p class="mt-3 text-sm text-[#2B2B2B] font-primary leading-relaxed">
+              تولید محتوا در یوتیوب یک فعالیت هیجان‌انگیز است که در کنار جذابیت‌هایش،
+              مشکلات و فوت ‌و فن‌های خودش را هم دارد.
+            </p>
+          </div>
+          <button class="mt-6 border border-black px-6 py-2 rounded-full flex items-center gap-2">
+            <span class="text-[#2B2B2B] text-sm font-primary">بازدید از کانال</span>
+            <span class="text-[#F13939] text-sm font-primary">یوتوب</span>
+            <img src="images/arrow-left-2.png" alt="" class="w-4 h-4">
+          </button>
+        </div>
+      </div>
+
+      <!-- حالت موبایل -->
+      <div class="block md:hidden text-center bg-[#FFF6F3] rounded-3xl p-4 relative overflow-hidden">
+        <!-- فلش چپ -->
+        <button class="absolute left-2 top-1/2 -translate-y-1/2">
+          <img src="images/arrow-left.svg" alt="">
+        </button>
+
+        <!-- تصویر پروفایل -->
+        <img src="images/profile.svg" alt="profile" class="w-16 h-16 mx-auto rounded-full mb-3">
+
+        <!-- نام -->
+        <h2 class="text-base font-semibold text-[#2B2B2B] font-primary">سکینه محمدی</h2>
+
+        <!-- توضیح -->
+        <p class="text-xs font-light text-[#2B2B2B] font-primary leading-relaxed mt-2">
+          تولید محتوا در یوتیوب یک فعالیت هیجان‌انگیز است که در کنار جذابیت‌هایش،
+          مشکلات و فوت ‌و فن‌های خودش را هم دارد.
+        </p>
+
+        <!-- دکمه -->
+        <button class="mt-3 border border-black px-5 py-2 rounded-full flex items-center justify-center gap-2 mx-auto">
+          <span class="text-sm text-[#2B2B2B]">بازدید از کانال</span>
+          <span class="text-sm text-[#F13939]">یوتوب</span>
+          <img src="images/arrow-left-2.png" alt="" class="w-4 h-4 object-contain">
+        </button>
 
 
+        <!-- فلش راست -->
+        <button class="absolute right-2 top-1/2 -translate-y-1/2">
+          <img src="images/arrow-right.svg" alt="">
+        </button>
+
+      </div>
 
 
+    </div>
+  </section>
 
 </body>
 

@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamfattemeh/Yektober-tailwind.git" ,
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "url": "git+https://github.com/iamfattemeh/Yektober-tailwind.git" 
   },
   "author": "",
   "license": "ISC",
