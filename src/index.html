@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 
@@ -229,17 +228,23 @@
     </div>
   </section>
 
-  <section class="w-full  max-w-6xl mx-auto p-4 " dir="rtl">
-    <div class="flex flex-col md:flex-row xl:ju">
+  <section class="w-full max-w-6xl mx-auto p-4" dir="rtl">
+    <div class="flex flex-col md:flex-row xl:justify-between">
+
       <!-- ستون راست: باکس خاکستری -->
       <div class="md:w-[23.563rem] md:h-[34rem]">
-        <div class="bg-[#F2F2F2] rounded-3xl p-6 flex flex-col h-full"> <!-- متن بالا -->
-          <h2 class="text-primary font-primary text-[1.75rem] mb-2"> <span class="text-secondary font-bold">پولت </span>
-            <span class="text-primary">رو دور</span> <span class="text-[#E33232] font-bold"> نریز!</span>
+        <div class="bg-[#F2F2F2] rounded-3xl p-6 flex flex-col h-full duration-300 hover:shadow-xl hover:scale-105">
+          <h2 class="text-primary font-primary text-[1.75rem] mb-2">
+            <span class="text-secondary font-bold">پولت </span>
+            <span class="text-primary">رو دور</span>
+            <span class="text-[#E33232] font-bold"> نریز!</span>
           </h2>
-          <p class="text-primary font-primary text-[0.875rem] mb-6"> تولید محتوا در یوتیوب یک فعالیت هیجان‌انگیز است که
-            در کنار جذابیت‌هایش، مشکلات و فوت‌و‌فن‌های خودش را هم دارد. </p> <!-- عکس پایین --> <img
-            src="images/child-sitting-chair-with-laptop_1106493-109031 Background Removed 1.svg" alt="">
+          <p class="text-primary font-primary text-[0.875rem] mb-6">
+            تولید محتوا در یوتیوب یک فعالیت هیجان‌انگیز است که در کنار جذابیت‌هایش، مشکلات و فوت‌و‌فن‌های خودش را هم
+            دارد.
+          </p>
+          <img src="images/child-sitting-chair-with-laptop_1106493-109031 Background Removed 1.svg" alt=""
+          >
         </div>
       </div>
 
@@ -253,8 +258,10 @@
               <span class="text-secondary text-2xl font-bold">تعرفه</span>‌ های این افزونه:
             </div>
             <div class="flex bg-gray-200 rounded-full p-1 w-[7.313rem] h-[2rem] font-primary">
-              <button class="bg-[#E33232] text-white text-[0.75rem] px-3 py-1 rounded-full">ماهانه</button>
-              <button class="text-[#2B2B2B] text-[0.75rem] px-3 py-1 rounded-full">سالانه</button>
+              <button id="monthly"
+                class="bg-[#E33232] text-white text-[0.75rem] px-3 py-1 rounded-full toggle-btn">ماهانه</button>
+              <button id="yearly"
+                class="text-[#2B2B2B] text-[0.75rem] px-3 py-1 rounded-full toggle-btn">سالانه</button>
             </div>
           </div>
           <p class="text-[#2B2B2B] text-[0.875rem] leading-6 mb-6">
@@ -267,7 +274,7 @@
 
           <!-- کارت پلن لجند -->
           <div
-            class="border-[#FEEBEB] border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            class="plan-card border-[#FEEBEB] border rounded-xl p-6 shadow-lg text-center transition-all duration-300 hover:shadow-xl hover:scale-105">
             <img src="images/image 2.svg" alt="">
             <div class="text-primary font-primary text-3xl flex justify-start gap-1 mb-2 mt-3">
               پلن<span class="font-bold text-3xl text-secondary">لجند</span>
@@ -280,14 +287,15 @@
               <p class="text-[0.75rem] font-primary text-primary">ماهانه/</p>
               56.87 <span class="text-[#E33232]">$</span>
             </div>
-            <button class="w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-[#E33232] font-primary">
+            <button
+              class="plan-btn w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-[#E33232] font-primary transition-all duration-300 hover:bg-[#E33232] hover:text-white">
               مشاهده تعرفه پلن
             </button>
           </div>
 
           <!-- کارت پلن پرو -->
           <div
-            class="border-[#FEEBEB] border rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            class="plan-card border-[#FEEBEB] border rounded-xl p-6 shadow-lg text-center transition-all duration-300 hover:shadow-xl hover:scale-105">
             <img src="images/image 2.svg" alt="">
             <div class="text-primary text-3xl font-primary flex justify-start gap-1 mb-2 mt-3">
               پلن<span class="font-bold text-3xl text-secondary">پرو</span>
@@ -300,16 +308,75 @@
               <p class="text-[0.75rem] text-primary">ماهانه/</p>
               56.87 <span class="text-[#E33232]">$</span>
             </div>
-            <button class="w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-[#E33232] font-primary">
+            <button
+              class="plan-btn w-full py-2 px-4 rounded-[1rem] bg-[#FEEBEB] text-[#E33232] font-primary transition-all duration-300 hover:bg-[#E33232] hover:text-white">
               مشاهده تعرفه پلن
             </button>
           </div>
 
         </div>
       </div>
-
     </div>
   </section>
+
+  <script>
+    // کارت ها هاور اکشن
+    const planCards = document.querySelectorAll('.plan-card');
+    planCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.querySelector('div.text-primary').classList.add('font-bold');
+      });
+      card.addEventListener('mouseleave', () => {
+        card.querySelector('div.text-primary').classList.remove('font-bold');
+      });
+    });
+
+    // دکمه مشاهده تعرفه
+    const planBtns = document.querySelectorAll('.plan-btn');
+    planBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('bg-[#E33232]');
+        btn.classList.toggle('text-white');
+        btn.classList.toggle('bg-[#FEEBEB]');
+        btn.classList.toggle('text-[#E33232]');
+      });
+    });
+
+    // دکمه ماهانه / سالانه
+    const monthly = document.getElementById('monthly');
+    const yearly = document.getElementById('yearly');
+    monthly.addEventListener('click', () => {
+      monthly.classList.add('bg-[#E33232]', 'text-white');
+      monthly.classList.remove('text-[#2B2B2B]');
+      yearly.classList.remove('bg-[#E33232]', 'text-white');
+      yearly.classList.add('text-[#2B2B2B]');
+    });
+    yearly.addEventListener('click', () => {
+      yearly.classList.add('bg-[#E33232]', 'text-white');
+      yearly.classList.remove('text-[#2B2B2B]');
+      monthly.classList.remove('bg-[#E33232]', 'text-white');
+      monthly.classList.add('text-[#2B2B2B]');
+    });
+  </script>
+
+  <style>
+    .toggle-btn {
+      transition: all 0.3s ease;
+      /* رنگ و بک‌گراند نرم تغییر کنه */
+    }
+
+    .plan-card {
+      transition: all 0.3s ease;
+      /* سایه و سایز کارت نرم تغییر کنه */
+    }
+
+    .plan-btn {
+      transition: all 0.8s ease;
+      /* دکمه مشاهده تعرفه نرم تغییر کنه */
+    }
+  </style>
+
+
 
   <section>
     <div class="w-full h-130 min-h-[150px] flex flex-col justify-center items-center md:h-180">
@@ -478,7 +545,7 @@
           <!-- دکمه سمت راست -->
           <button type="submit"
             class="w-44 sm:w-56 h-12 bg-[#E33232] hover:bg-red-700 text-white rounded-full font-primary flex items-center justify-center gap-2 transition">
-            <span class="text-sm sm:text-base">درخواست مشاوره رایگان</span>
+            <span class="text-sm sm:text-base md:text-lg">درخواست مشاوره رایگان</span>
             <img src="images/arrow-left.svg" alt="" class="w-4 sm:w-5">
           </button>
         </div>
