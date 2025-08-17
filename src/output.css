@@ -494,9 +494,11 @@
   .w-33 {
     width: calc(var(--spacing) * 33);
   }
+
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
+
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
@@ -741,6 +743,12 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
+<<<<<<< HEAD
+  .bg-red-600 {
+    background-color: var(--color-red-600);
+  }
+=======
+>>>>>>> hossein
   .bg-transparent {
     background-color: transparent;
   }
