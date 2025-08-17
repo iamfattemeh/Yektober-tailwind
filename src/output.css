@@ -215,17 +215,34 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .-top-4 {
+    top: calc(var(--spacing) * -4);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
   .top-1 {
     top: calc(var(--spacing) * 1);
   }
+
+  .top-1\/1 {
+    top: calc(1/1 * 100%);
+  }
+
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
+  .top-1\/3 {
+    top: calc(1/3 * 100%);
+  }
+  .top-1\/4 {
+    top: calc(1/4 * 100%);
+  }
   .top-5 {
     top: calc(var(--spacing) * 5);
+  }
+  .top-\[65\%\] {
+    top: 65%;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -452,6 +469,7 @@
   .min-h-\[150px\] {
     min-height: 150px;
   }
+
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -494,11 +512,9 @@
   .w-33 {
     width: calc(var(--spacing) * 33);
   }
-
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
-
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
@@ -743,12 +759,6 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
-<<<<<<< HEAD
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
-=======
->>>>>>> hossein
   .bg-transparent {
     background-color: transparent;
   }
